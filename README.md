@@ -224,48 +224,6 @@ otavio@dev-journey:~$ status --check
 
 </div>
 
-<details>
-<summary>⚙️ Como ativar a animação da cobrinha (obrigatório fazer 1x)</summary>
-<br/>
-
-Essa imagem só aparece depois de configurar uma GitHub Action no seu repositório especial `ohenriquesilva/ohenriquesilva`. Crie o arquivo `.github/workflows/snake.yml` com o conteúdo abaixo:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ohenriquesilva
-          outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Depois de rodar a Action uma vez, a animação passa a aparecer automaticamente neste README.
-
-</details>
-
-<br/>
-
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
 </div>
