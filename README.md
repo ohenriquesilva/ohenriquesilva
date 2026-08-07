@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=2500&pause=800&color=00F0FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=103&lines=%3E+initializing+profile...+%5BOK%5D;%3E+loading+skills...+%5BOK%5D;%3E+status%3A+comprador+%2F%2F+engenharia+industrial;%3E+objective%3A+transition_to_dev+%3D+true_" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=2500&pause=800&color=00F0FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=105&lines=%3E+initializing+profile...+%5BOK%5D;%3E+loading+skills...+%5BOK%5D;%3E+status%3A+comprador+%2F%2F+engenharia+industrial;%3E+objective%3A+transition_to_dev+%3D+true_" alt="Typing SVG" />
 
 <br/><br/>
 
