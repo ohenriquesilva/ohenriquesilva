@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=2500&pause=800&color=00F0FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=105&lines=%3E+initializing+profile...+%5BOK%5D;%3E+loading+skills...+%5BOK%5D;%3E+status%3A+comprador+%2F%2F+engenharia+industrial;%3E+objective%3A+transition_to_dev+%3D+true_" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=2500&pause=800&color=00F0FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=106&lines=%3E+initializing+profile...+%5BOK%5D;%3E+loading+skills...+%5BOK%5D;%3E+status%3A+comprador+%2F%2F+engenharia+industrial;%3E+objective%3A+transition_to_dev+%3D+true_" alt="Typing SVG" />
 
 <br/><br/>
 
@@ -26,14 +26,15 @@
 usuario: Otávio Henrique
 função_atual: Comprador — Engenharia Industrial (HVAC / Elétrica / Estrutural metálica)
 empresa: Adalta Engenharia
-formação: Ciência da Computação (cursando)
+formação: Engenharia de Software — Universidade Anhembi Morumbi (bolsista, previsão 2030)
+histórico: Iniciou em Ciência da Computação (Universidade Cruzeiro do Sul) e migrou de curso/faculdade
 missão: Migrar da área de Compras para Desenvolvimento de Software
 foco: Python · Automação · Dados · IA aplicada
 idioma: pt-BR (nativo) · en-US (básico)
 rotina: trabalho período integral + faculdade + estudo autodidata
 ```
 
-> Trabalho hoje com compras no setor de Engenharia HVAC — cotações, análise técnica e negociação com fornecedores
+> Trabalho hoje com engenharia de compras — cotações, análise técnica e negociação com fornecedores
 > em projetos industriais (ventiladores centrífugos, UTAs, painéis elétricos, estruturas metálicas).
 > Estou usando essa vivência técnica e analítica como ponte para migrar para tecnologia, com foco
 > em programação, automação de processos e dados. Sem atalhos — construindo a base com projetos reais.
@@ -223,6 +224,48 @@ otavio@dev-journey:~$ status --check
 <img src="https://raw.githubusercontent.com/ohenriquesilva/ohenriquesilva/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
+
+<details>
+<summary>⚙️ Como ativar a animação da cobrinha (obrigatório fazer 1x)</summary>
+<br/>
+
+Essa imagem só aparece depois de configurar uma GitHub Action no seu repositório especial `ohenriquesilva/ohenriquesilva`. Crie o arquivo `.github/workflows/snake.yml` com o conteúdo abaixo:
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ohenriquesilva
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Depois de rodar a Action uma vez, a animação passa a aparecer automaticamente neste README.
+
+</details>
+
+<br/>
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
